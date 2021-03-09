@@ -25,6 +25,6 @@ Function.prototype.myBind = function(context = window, ...args) {
         if(this instanceof F){
             return new _this(...arr, ...args,)
         }
-        return -this.apply(context, arr.concat(...args))
+        return _this.apply(context, arr.concat(...args))
     }
 }
