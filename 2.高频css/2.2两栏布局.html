@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer {
+      height: 100px;
+    }
+    .box1 {
+      width: 100px;
+      height: 100%;
+      float: left;
+      background: #000;
+    }
+    .box2 {
+      margin-left: 100px;
+      height: 100%;
+      background: red;
+    }
+    .outer1 {
+      width: 400px;
+      display: flex;
+    }
+    .box3, .box4 {
+      flex: 1;
+      align-self: stretch;
+      background: Red;
+    }
+  .box4 {
+    background: green;
+  }
+  </style>
+</head>
+<body>
+  <h3>一列高度固定，另一列</h3>
+  <div class="outer">
+    <div class="box1">
+    </div>
+    <div class="box2">
+    </div>
+  </div>
+  <h3>一列高度随另一列自适应：两列等高布局方法一：flex</h3>
+  <div class="outer1">
+    <div class="box3">
+      222222222222222222222
+      一列高度随另一列自适应：两列等高布局
+      一列高度随另一列自适应：两列等高布局
+      一列高度随另一列自适应：两列等高布局
+      一列高度随另一列自适应：两列等高布局
+    </div>
+    <div class="box4">
+      一列高度随另一列自适应：两列等高布局
+    </div>
+  </div>
+</body>
+</html>
