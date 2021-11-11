@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .watch {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border: 4px solid #000;
+            border-radius: 50%;
+            margin: auto;
+        }
+        .pointer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #000;
+        }
+        .hour_scale {
+            position: absolute;
+            width: 4px;
+            height: 6px;
+        }
+        .hour {
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-top: -3px;
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: left center;
+            width: 50px;
+            height: 6px;
+            background: rebeccapurple;
+
+        }
+        .minute {
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-top: -1.5px;
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: left center;
+            width: 60px;
+            height: 3px;
+            background: darkolivegreen;
+
+        }
+        .second {
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-top: -1px;
+            transform-origin: 50% 50%;
+            -webkit-transform-origin: left center;
+            width: 75px;
+            height: 2px;
+            background: #000;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="watch">
+        <div class="pointer"></div>
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+
+    </div>
+    
+</body>
+<script>
+    window.onload = function() {
+        
+    }
+    
+</script>
+</html>
