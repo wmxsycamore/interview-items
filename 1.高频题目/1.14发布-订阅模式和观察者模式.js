@@ -10,7 +10,7 @@ class EventEmitter {
             // 一个名字可以订阅多个事件函数
             this.events[eventName] = [callback]
         } else {
-            ethis.events[eventName].push(callback);
+            this.events[eventName].push(callback);
         }
     }
     // 触发事件的方法

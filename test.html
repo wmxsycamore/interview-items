@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1" onclick="divClick(event)">
+    <p class="box2" onclick="pClick(event)">hhhh</p>
+  </div>
+</body>
+<script>
+  // window.onload = function() {
+  //   const data = []
+  //   data =>  {
+  //     const obj = data.reduce((pre, cur, index) => {
+  //       pre[index] = cur;
+  //     }, {})
+  //     let result = {};
+  //     data.forEach((item, index) => {
+  //       let parent = obj[item.parent];
+        
+  //     })
+  
+  //   }
+    
+
+  // }
+  function divClick(e) {
+      console.log("click div");
+      console.log(e.target);
+      console.log(e.currentTarget)
+    }
+    function pClick(e) {
+      console.log("click p");
+      console.log(e.target);
+      console.log(e.currentTarget)
+    }
+</script>
+</html>

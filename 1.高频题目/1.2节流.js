@@ -18,3 +18,16 @@ setInterval(
     console.log(1)
   }, 500),
 );
+
+//方式二
+function throttle2(fn, delay) {
+  let flag = true;
+  return () => {
+    if(!flag) return;
+    flag = false;
+    timer = setTimeout(() => {
+      fn.apply(this, [...arguments]);
+      flag = true;
+    }, delay)
+  }
+}
