@@ -6,7 +6,7 @@ class EventEmeitter {
     const handler = this._events.get(type);
     if(Array.isArray(handler)) {
       for(let i=0; i< handler.length; i++) {
-        if(args.length) {
+        if(args.length) {  
           handler[i].apply(this, args);
         } else {
           handler[i].call(this);

@@ -12,6 +12,5 @@ class MyPromise {
     this.successFun = [];
     this.failFun = [];
 
-
   }
 }

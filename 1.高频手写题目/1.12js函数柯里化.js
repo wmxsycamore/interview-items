@@ -13,7 +13,7 @@ function curry(fn, args) {
     }
 }
 
-// es6写法
+// es6写法 
 const curry = (fn, arr = []) => (...args) => (
     args => args.length === fn.length
         ? fn(...args)
