@@ -43,10 +43,23 @@ a().then(data => {
   console.log(data); // 输出abc
 })
 
-// 方法二
-function quene(arr) {
-  arr.forEach(Promise => {
-    
+// 方法二: 构建队列
+function queue(arr) {
+  var sequence = Promise.resolve()
+  arr.forEach(promise => {
+    sequence = sequence.then(promise)
   });
-  
+  return sequence
 }
+
+// 方法三： 使用async， await构建对列
+async function queue(arr) {
+  let res = null;
+  for(let promise of arr) {
+    res = await promise(res)
+  }
+  return await res;
+}
+queue([a,b,c]).then(data => {
+  console.log(data)
+})
